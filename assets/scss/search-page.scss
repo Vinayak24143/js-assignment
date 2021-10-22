@@ -1,0 +1,76 @@
+@import "variables";
+@import 'mixin';
+
+*{
+    margin:0; padding:0; box-sizing: border-box; overflow-x: hidden;
+}
+
+.wrapper{
+    width: 100%;
+    padding:1rem;
+    @include background;
+}
+
+//ImageResult section
+.imageResult{
+  @include resultBox;
+    h2{
+        @include heading;
+    }
+    img{width:560px; height:100%; object-fit: cover; object-position: center; padding-bottom:2rem}
+}
+
+
+//WebSearch section
+.web-result{
+    @include resultBox;
+    h2{
+        @include heading;
+    }
+    .resultList{
+        padding: 0; margin:0; list-style-type: none;
+        li{margin-bottom: 0.425rem;line-height: 24px;
+            a{color:$secondery-color;font-weight:bold;
+                &:hover{
+                    color:$secondery-color;
+                }
+            }
+            .title{color:$primary-color; text-decoration: none; font-weight: bolder;
+            &:hover{
+                text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.description{ overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical;
+    display: -webkit-box; -webkit-line-clamp: 2; color:$font-color;}
+
+// Search pannel
+.search { position: relative;  margin-bottom: 1rem;
+    input {height: 60px; text-indent: 10px; border: 1px solid #d6d4d4; border-radius: 0.5rem;
+    &:focus { box-shadow: none; border: 1px solid $search-btn-bg}
+    }
+    .fa-search { position: absolute; top: 20px;left: 16px}
+    button {position: absolute; top: 5px; right: 5px;height: 50px;width: 110px;background: $search-btn-bg; 
+    font-size: 1.2rem; font-weight: bold;}
+}
+
+//Pagination
+.pagination{text-align: center;padding:1.5rem 0 0 0;
+    .pagination-item{
+        margin:0; padding:0; list-style-type: none;width: 100%;
+        li{display: inline-block;
+            a{display: block; margin: 0.5rem; color:$font-color; font-weight: bold;
+            &:hover{
+                color:$primary-color
+                    }
+                }
+            }
+        }
+    }
+//Media query
+@media(max-width:768px){
+    .web-result{margin-top:1.5rem;}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Page</title>
+   <!--Begin Bootstrap CSS-->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+   <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" type="text/css">
+   <!--End Bootstrap CSS-->
+   <!--Begin page css-->
+   <link rel="stylesheet" href="assets/css/search-page.css" type="text/css">
+   <!--End page css-->
+</head>
+<body>
+  <section class="wrapper">
+    <!--Begin Search Box Section-->
+    <div class="container-fluid pl-0 pr-0">
+        <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-12">
+                <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Search"> <button class="btn btn-primary">Search</button> </div>
+            </div>
+        </div>
+    </div>
+    <!--End Search Box Section-->
+    <!--Begin Image Resulst Section-->
+    <div class="container-fluid pl-0 pr-0">
+        <div class="row">
+        <!--Begin Image Resulst Section-->
+            <div class="col-sm-12 col-md-12 col-lg-7">
+            <div class="imageResult">
+                <h2>Image Result</h2>
+                <div class="row" id="images_section">
+                    
+                </div>
+            </div>
+            </div>
+            <!--End Image Resulst Section-->
+            <!--Begin Web Resulst Section-->
+            <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="web-result">
+                <h2>Web Result</h2>
+                <ul class="resultList">
+                   
+                   
+                </ul>
+                <!--Begin Pagination-->
+                <div class="pagination">
+                    <ul class="pagination-item">
+                        <li><a href="javascript:void(0)" id="first">1</a></li>
+                        <li><a href="javascript:void(0)" id="second">2</a></li>
+                        <li><a href="javascript:void(0)" id="third">3</a></li>
+                    </ul>
+                </div>
+                <!--End Pagination-->
+            </div>
+            </div>
+        <!--End Web Resulst Section-->
+        </div>
+    </div>
+  </section>  
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

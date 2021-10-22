@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 1rem;
+  background: #dfe5f3;
+  background: linear-gradient(to bottom right, #dfe5f3, #fefefe);
+}
+
+.imageResult {
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 1px solid #d6d4d4;
+  height: 100%;
+}
+.imageResult h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0 0.5rem;
+}
+.imageResult img {
+  width: 560px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  padding-bottom: 2rem;
+}
+
+.web-result {
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 1px solid #d6d4d4;
+  height: 100%;
+}
+.web-result h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0 0.5rem;
+}
+.web-result .resultList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.web-result .resultList li {
+  margin-bottom: 0.425rem;
+  line-height: 24px;
+}
+.web-result .resultList li a {
+  color: #0666aa;
+  font-weight: bold;
+}
+.web-result .resultList li a:hover {
+  color: #0666aa;
+}
+.web-result .resultList li .title {
+  color: #000;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.web-result .resultList li .title:hover {
+  text-decoration: none;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  color: #606060;
+}
+
+.search {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.search input {
+  height: 60px;
+  text-indent: 10px;
+  border: 1px solid #d6d4d4;
+  border-radius: 0.5rem;
+}
+.search input:focus {
+  box-shadow: none;
+  border: 1px solid #0000ff;
+}
+.search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: #0000ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.pagination {
+  text-align: center;
+  padding: 1.5rem 0 0 0;
+}
+.pagination .pagination-item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+.pagination .pagination-item li {
+  display: inline-block;
+}
+.pagination .pagination-item li a {
+  display: block;
+  margin: 0.5rem;
+  color: #606060;
+  font-weight: bold;
+}
+.pagination .pagination-item li a:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .web-result {
+    margin-top: 1.5rem;
+  }
+}/*# sourceMappingURL=search-page.css.map */
