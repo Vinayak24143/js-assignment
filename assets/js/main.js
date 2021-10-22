@@ -16,6 +16,12 @@ function api_call(query,start_from=1){
         })
         .then(response => response.json())
         .then(data => {
+            if (data['queries']['request'][0]['startIndex']==1){
+                let pagination_items = paginatiom_item_container.getElementsByTagName('a');
+                pagination_items[0].text =  1;
+                pagination_items[1].text =  2;
+                pagination_items[2].text =  3;
+            }
             data_formating(data);
         })
         .catch((error) => {
